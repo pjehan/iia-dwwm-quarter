@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use '../utils/variables';
+
+.badge {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    &.badge-primary {
+        color: variables.$color-primary;
+        background-color: color.scale(variables.$color-primary, $lightness: 80%);
+    }
+
+    &.badge-secondary {
+        color: variables.$color-secondary;
+        background-color: color.scale(variables.$color-secondary, $lightness: 80%);
+    }
+
+    &.badge-success {
+        color: variables.$color-success;
+        background-color: color.scale(variables.$color-success, $lightness: 80%);
+    }
+}

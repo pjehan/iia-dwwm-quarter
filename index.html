@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de biens immobiliers en Mayenne">
+    <title>Quarter</title>
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
+    <script src="dist/app.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="bg-primary">
+            <div class="container top-bar">
+                <div class="top-bar-contact">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:contact@quarter.com">
+                        contact@quarter.com
+                    </a>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:0123456789">
+                        0123456789
+                    </a>
+                </div>
+                <ul class="social-networks">
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sticky-bar">
+        <div class="container">
+            <img src="images/logo.png" alt="Quarter">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="properties.html">Propriétés</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Catégories</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="apartments.html">Appartements</a>
+                            </li>
+                            <li>
+                                <a href="houses.html">Maisons</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-show-fav" class="btn btn-secondary">
+                            <i class="fa fa-eye"></i>
+                            Voir favoris
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section-homepage">
+        <div class="section-homepage-content">
+            <h2>
+                <i class="fa fa-home"></i>
+                Real Estate Agent
+            </h2>
+            <h1>
+                Find your dream
+                <br>
+                house by us
+            </h1>
+        </div>
+    </section>
+
+    <section class="section-search">
+        <div class="container">
+            <form>
+                <select name="area">
+                    <option>Choisissez une ville</option>
+                    <option value="laval">Laval</option>
+                    <option value="rennes">Rennes</option>
+                </select>
+                <select name="status">
+                    <option>Choisissez un statut</option>
+                    <option value="achat">Achat</option>
+                    <option value="location">Location</option>
+                </select>
+                <select name="type">
+                    <option>Choisissez un type</option>
+                    <option value="maison">Maison</option>
+                    <option value="appartement">Appartement</option>
+                </select>
+                <button type="submit" class="btn btn-secondary">
+                    <i class="fa fa-search"></i>
+                    Rechercher
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Catégories</span>
+        <h2>Liste des catégories</h2>
+
+        <div class="container">
+            <div class="list-categories">
+                <article>
+                    <a href="#">
+                        <img src="images/category-apartments.jpg" alt="Appartements">
+                        <div class="overlay">
+                            <h3>Appartements</h3>
+                            <span class="badge badge-secondary">
+                                15 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-condos.jpg" alt="Copropriétés">
+                        <div class="overlay">
+                            <h3>Copropriétés</h3>
+                            <span class="badge badge-secondary">
+                                4 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-houses.jpg" alt="Maisons">
+                        <div class="overlay">
+                            <h3>Maisons</h3>
+                            <span class="badge badge-secondary">
+                                42 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="images/category-villas.jpg" alt="Villas">
+                        <div class="overlay">
+                            <h3>Villas</h3>
+                            <span class="badge badge-secondary">
+                                6 offres
+                            </span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-centered">
+        <span class="badge badge-secondary">Propriétés</span>
+        <h2>Propriétés mises en avant</h2>
+
+        <div class="container">
+            <div class="list-properties">
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                            <img src="images/property-1.jpg" alt="Maison à Laval">
+                        </a>
+                        <div class="badge badge-success">FOR RENT</div>
+                        <div class="header-info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                Laval
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera"></i>
+                                    4
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye"></i>
+                                    245
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="property-card-content">
+                        <div class="property-price">
+                            800 €<span class="property-price-duration">/Mois</span>
+                        </div>
+                        <h3>Maison en lotissement</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, neque. Provident amet officia quia, pariatur, impedit quis vero qui veniam sequi doloribus cumque omnis necessitatibus. Officia facere qui adipisci nemo.</p>
+                        <ul class="property-card-features">
+                            <li>
+                                <span class="feature-value">3</span>
+                                <i class="fa fa-bed"></i>
+                                <div>Chambres</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">2</span>
+                                <i class="fa fa-bath"></i>
+                                <div>Salles de bain</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">110</span>
+                                <i class="fa fa-arrows-alt"></i>
+                                <div>Mètres carrés</div>
+                            </li>
+                        </ul>
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/john-doe.jpg" alt="John Doe">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent immobilier</span>
+                            </div>
+                        </address>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                            <img src="images/property-2.jpg" alt="Appartement à Laval">
+                        </a>
+                        <div class="badge badge-secondary">FOR SALE</div>
+                        <div class="header-info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                Laval
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera"></i>
+                                    2
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye"></i>
+                                    184
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="property-card-content">
+                        <div class="property-price">
+                            260 000 €
+                        </div>
+                        <h3>Appartement centre ville</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, neque. Provident amet officia quia, pariatur, impedit quis vero qui veniam sequi doloribus cumque omnis necessitatibus.</p>
+                        <ul class="property-card-features">
+                            <li>
+                                <span class="feature-value">2</span>
+                                <i class="fa fa-bed"></i>
+                                <div>Chambres</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">1</span>
+                                <i class="fa fa-bath"></i>
+                                <div>Salles de bain</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">90</span>
+                                <i class="fa fa-arrows-alt"></i>
+                                <div>Mètres carrés</div>
+                            </li>
+                        </ul>
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/john-doe.jpg" alt="John Doe">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent immobilier</span>
+                            </div>
+                        </address>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                            <img src="images/property-3.jpg" alt="Villa à Rennes">
+                        </a>
+                        <div class="badge badge-secondary">FOR SALE</div>
+                        <div class="header-info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                Rennes
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera"></i>
+                                    12
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye"></i>
+                                    1543
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="property-card-content">
+                        <div class="property-price">
+                            850 000 €
+                        </div>
+                        <h3>Ville à Rennes</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, neque. Provident amet officia quia, pariatur, impedit quis vero qui veniam sequi doloribus cumque omnis necessitatibus.</p>
+                        <ul class="property-card-features">
+                            <li>
+                                <span class="feature-value">5</span>
+                                <i class="fa fa-bed"></i>
+                                <div>Chambres</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">4</span>
+                                <i class="fa fa-bath"></i>
+                                <div>Salles de bain</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">250</span>
+                                <i class="fa fa-arrows-alt"></i>
+                                <div>Mètres carrés</div>
+                            </li>
+                        </ul>
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/john-doe.jpg" alt="John Doe">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent immobilier</span>
+                            </div>
+                        </address>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+                <article class="property-card">
+                    <header class="property-card-header">
+                        <a href="#">
+                            <img src="images/property-4.jpg" alt="Appartement à Nantes">
+                        </a>
+                        <div class="badge badge-success">FOR RENT</div>
+                        <div class="header-info">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                Nantes
+                            </div>
+                            <div class="header-info-icons">
+                                <div class="bg-transparent">
+                                    <i class="fa fa-camera"></i>
+                                    2
+                                </div>
+                                <div class="bg-transparent">
+                                    <i class="fa fa-eye"></i>
+                                    14
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="property-card-content">
+                        <div class="property-price">
+                            1100 €<span class="property-price-duration">/Mois</span>
+                        </div>
+                        <h3>Appartement centre ville</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, neque. Provident amet officia quia, pariatur, impedit quis vero qui veniam sequi doloribus cumque omnis necessitatibus.</p>
+                        <ul class="property-card-features">
+                            <li>
+                                <span class="feature-value">2</span>
+                                <i class="fa fa-bed"></i>
+                                <div>Chambres</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">2</span>
+                                <i class="fa fa-bath"></i>
+                                <div>Salles de bain</div>
+                            </li>
+                            <li>
+                                <span class="feature-value">95</span>
+                                <i class="fa fa-arrows-alt"></i>
+                                <div>Mètres carrés</div>
+                            </li>
+                        </ul>
+                    </main>
+                    <footer class="property-card-footer">
+                        <address>
+                            <img src="images/john-doe.jpg" alt="John Doe">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>Agent immobilier</span>
+                            </div>
+                        </address>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#" class="back-to-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</body>
+</html>

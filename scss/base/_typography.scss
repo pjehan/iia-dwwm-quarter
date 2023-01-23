@@ -1,0 +1,27 @@
+@use '../utils/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 3000px;
+}
+
+h2 {
+    color: variables.$color-primary;
+    font-size: 3rem;
+}
+
+a {
+    color: variables.$color-primary;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        color: variables.$color-secondary;
+    }
+}

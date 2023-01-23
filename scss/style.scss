@@ -1,0 +1,19 @@
+@use 'normalize.css/normalize';
+
+@use 'base/backgrounds';
+@use 'base/typography';
+
+@use 'layout/containers';
+@use 'layout/headers';
+@use 'layout/sections';
+
+@use 'components/back-to-top';
+@use 'components/badges';
+@use 'components/buttons';
+@use 'components/property-cards';
+@use 'components/social-networks';
+
+@use 'pages/home';
+
+$fa-font-path: '~fontawesome-4.7/fonts';
+@import '~fontawesome-4.7/scss/font-awesome';
